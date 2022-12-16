@@ -1,9 +1,131 @@
 :root{
-
+    --color-bg1:    #594cee;
+    --color-bg2:    #8dd0f5;
+    --color-bg3:    #5c54ed;
+    --color-white1: #fff;
+    --color-white2: #fdfdfd;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
+
+body{
+    background: linear-gradient(180deg, var(--color-bg1) 0%, var(--color-bg2) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* helper class*/
+.hide{
+    display: none;
+}
+
+.center{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--color-bg3);
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+    border-radius: 1rem;
+    color: var(--color-white2);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Form */
+.form .sub-title{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.form-input-container{
+    display: flex;
+}
+
+.form input{
+    border-radius: 4px;
+    border: none;
+    padding: .8rem;
+    flex: 1;
+    font-size: .9rem;
+}
+
+.form input::placeholder{
+    font-size: .9rem;
+}
+
+.form button{
+    background-color: var(--color-white1);
+    border-radius: 4px;
+    border: none;
+    min-width: 50px;
+    margin-left: .4rem;
+    cursor: pointer;
+}
+
+button .fa-magnifying-glass{
+    color: var(--color-bg1);
+}
+
+button .fa-beat{
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+}
+
+#weather-data{
+    border-top: 2px solid var(--color-white1);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+#weather-data h2{
+    margin-bottom: 1.5rem;
+}
+
+#weather-data h2 i{
+    font-size: 1.5rem;
+    color: #e55039;
+}
+
+#weather-data h2 span{
+    margin: 0px 1rem;
+}
+
+#weather-data h2 img{
+    width: 50px;
+}
+
+
+#weather-data #temperature{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#description-container{
+    margin: .6rem 0;
+}
+
+#description-container #description{
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+#details-container #humidity{
+    border-right: 2px solid var(--color-white2);
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+

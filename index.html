@@ -6,13 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima|Agora</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-        <h1>Clima Agora</h1>
-        <p>Busque como está o clima neste momento na sua região preferida!</p>
-
-
-
-    <script src="./assets/js/script.js"></script>
+    <div class="container">
+        <div class="form">
+            <h1>Clima Agora</h1>
+            <p class="sub-title" >Busque como está o clima neste momento na sua região preferida!</p>
+            <div class="form-input-container">
+                <input 
+                    type="text" 
+                    id="city-input"
+                    placeholder="Digite o nome da cidade"
+                />  
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass fa-lg fa-beat"></i>
+                </button>
+            </div>
+            <div id="weather-data">
+                <h2 class="center">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="city">Santa Catarina</span>
+                    <img src="https://countryflagsapi.com/png/br" id="country" alt="bandeira do país">
+                </h2>
+                <p id="temperature">
+                    <span>33</span>&deg;C
+                </p>
+                <div id="description-container" class="center">
+                    <p id="description">sol</p>
+                    <img src="http://openweathermap.org/img/wn/01d@2x.png" id="weather-icon" alt="condiçoes do tempo">
+                </div>
+                <div id="details-container" class="center">
+                    <p id="humidity">
+                        <i class="fa-solid fa-droplet" ></i>
+                        <span>48%</span>
+                    </p>
+                    <p id="wind">
+                        <i class="fa-solid fa-wind" ></i>
+                        <span>4km</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js" defer></script>
 </body>
 </html>
