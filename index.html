@@ -22,7 +22,7 @@
                 <input 
                     type="text" 
                     id="city-input"
-                    placeholder="Digite o nome da cidade"
+                    placeholder="Digite o nome da cidade, estado ou país"
                 />  
                 <button id="search">
                     <i class="fa-solid fa-magnifying-glass fa-lg fa-beat"></i>
@@ -35,7 +35,7 @@
                     <img src="https://countryflagsapi.com/png/br" id="country" alt="bandeira do país">
                 </h2>
                 <p id="temperature">
-                    <span>33</span> &deg;C
+                    <span>33</span>&deg;C
                 </p>
                 <div id="description-container" class="center">
                     <p id="description">sol</p>
@@ -52,9 +52,11 @@
                     </p>
                 </div>
             </div>
+            <div id="load-data" class="hide">
+                <i class="fa-solid fa-spinner fa-spin-pulse loading"></i>
+            </div>
             <div id="weather-unknow" class="hide">
                 <h3>Não achamos esse local</h3>
-                <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
         </div>
     </div>

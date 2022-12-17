@@ -15,6 +15,9 @@
 
 body{
     background: linear-gradient(180deg, var(--color-bg1) 0%, var(--color-bg2) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,8 +89,8 @@ button .fa-beat{
     border-top: 2px solid var(--color-white1);
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    opacity: 0;
-    transition: all .3s ease-in-out;
+    /* opacity: 0;
+    transition: all .3s ease-in-out; */
 }
 
 #weather-data h2{
@@ -100,6 +103,7 @@ button .fa-beat{
 
 #weather-data h2 span{
     margin: 0px 1rem;
+    font-size: 2rem;
 }
 
 #weather-data h2 img{
@@ -108,7 +112,7 @@ button .fa-beat{
 
 
 #weather-data #temperature{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
@@ -129,16 +133,15 @@ button .fa-beat{
     padding-right: 1rem;
 }
 
-#weather-unknow{
-    margin-top: 1.5rem;
-    text-align: center;
-    text-transform: capitalize;
-}
-
 #weather-unknow h3{
     margin-right: 1rem;
 }
 
 #weather-unknow i{
     font-size: 1.3rem;
+}
+
+.loading{
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
 }
