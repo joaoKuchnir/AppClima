@@ -21,7 +21,7 @@ const bodyElement    = qS("body");
 
 // Functions
 const getweatherData = (city) =>{
-    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}&lang=pt_br`
+    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${encodeURI(city)}&appid=${apiKey}&lang=pt_br`
     swicthWalpaper(city);
     showLoading();
     const dataRequest = axios.get(apiWeatherURL)
