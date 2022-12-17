@@ -37,8 +37,8 @@ const getweatherData = (city) =>{
 };
 
 const showWeatherData = async (city) =>{
-    const data = await getweatherData(city);
     try {
+        const data = await getweatherData(city);
         divUnknow.style.cssText = "";
         cityElement.innerText = data.name;
         countryElement.setAttribute("src", apiCountryURL + data.sys.country);
@@ -77,8 +77,8 @@ const getUnsPlashData = (city) =>{
 }
 
 const swicthWalpaper = async (city) =>{
-    const data = await getUnsPlashData(city);
     try {
+        const data = await getUnsPlashData(city);
         bodyElement.style.backgroundImage = `url(${data.results[0].urls.full})`;
     } catch (error) {
         bodyElement.style.background = "linear-gradient(180deg, var(--color-bg1) 0%, var(--color-bg2) 100%)";
