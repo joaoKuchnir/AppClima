@@ -28,14 +28,14 @@
                     <i class="fa-solid fa-magnifying-glass fa-lg fa-beat"></i>
                 </button>
             </div>
-            <div id="weather-data">
+            <div id="weather-data" class="hide">
                 <h2 class="center">
                     <i class="fa-solid fa-location-dot"></i>
                     <span id="city">Santa Catarina</span>
                     <img src="https://countryflagsapi.com/png/br" id="country" alt="bandeira do país">
                 </h2>
                 <p id="temperature">
-                    <span>33</span>&deg;C
+                    <span>33</span> &deg;C
                 </p>
                 <div id="description-container" class="center">
                     <p id="description">sol</p>
@@ -52,8 +52,13 @@
                     </p>
                 </div>
             </div>
+            <div id="weather-unknow" class="hide">
+                <h3>Não achamos esse local</h3>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
         </div>
     </div>
     <script src="./assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

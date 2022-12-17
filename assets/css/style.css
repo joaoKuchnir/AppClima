@@ -86,6 +86,8 @@ button .fa-beat{
     border-top: 2px solid var(--color-white1);
     margin-top: 1.5rem;
     padding-top: 1.5rem;
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
 
 #weather-data h2{
@@ -94,7 +96,6 @@ button .fa-beat{
 
 #weather-data h2 i{
     font-size: 1.5rem;
-    color: #e55039;
 }
 
 #weather-data h2 span{
@@ -112,7 +113,7 @@ button .fa-beat{
 }
 
 #description-container{
-    margin: .6rem 0;
+    margin: 2rem 0;
 }
 
 #description-container #description{
@@ -128,4 +129,16 @@ button .fa-beat{
     padding-right: 1rem;
 }
 
+#weather-unknow{
+    margin-top: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
 
+#weather-unknow h3{
+    margin-right: 1rem;
+}
+
+#weather-unknow i{
+    font-size: 1.3rem;
+}
